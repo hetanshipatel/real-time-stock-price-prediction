@@ -1,43 +1,67 @@
-# Real-Time Stock Price Prediction (NVDA & NFLX)
+# Real-Time Stock Market Analysis & Prediction System
 
 ## 📌 Project Overview
-This project builds a real-time stock price prediction system using historical market data and machine learning techniques. The goal is not only to predict prices but also to **evaluate model reliability and accuracy** before making investment decisions.
+This project is a **generic, reusable stock market analysis and prediction system** built using Python and machine learning techniques.  
+Instead of being limited to a specific company, the system allows users to **input any stock ticker** and automatically:
 
-Stocks used:
-- NVIDIA (NVDA)
-- Netflix (NFLX)
+- Fetch historical stock price data
+- Incorporate external market factors
+- Perform exploratory data analysis (EDA)
+- Prepare data for machine learning models
+- Evaluate prediction performance
 
-## 🎯 Objectives
+The goal is to move beyond simple historical price modeling and build a **market-aware prediction pipeline**.
+
+---
+
+## 🎯 Key Objectives
+- Build a reusable pipeline for **any stock ticker**
 - Fetch real-time and historical stock market data
-- Perform exploratory data analysis and feature engineering
-- Train baseline ML models and advanced deep learning models
-- Evaluate model accuracy using proper financial metrics
-- Build a real-time prediction pipeline
+- Include **macro and market-wide factors** that influence stock movement
+- Perform clear, explainable exploratory data analysis
+- Prepare data for machine learning and deep learning models
+- Evaluate model accuracy honestly and transparently
 
-## 🧠 Models Used
-- Linear Regression
-- Random Forest
-- XGBoost
-- LSTM (Deep Learning)
+---
 
-## 📊 Evaluation Metrics
-- MAE (Mean Absolute Error)
-- RMSE (Root Mean Squared Error)
-- MAPE
-- Directional Accuracy (Up/Down)
+## 🔤 User-Driven Design
+This project is designed so that **no code changes are required** to analyse a new stock.
+
+Users simply provide a stock ticker (e.g. `AAPL`, `TSLA`, `NVDA`) as input, and the same pipeline runs end-to-end.
+
+---
+
+## 📊 Data Sources
+
+### Stock-Specific Data
+- Open, High, Low, Close prices
+- Volume
+- Daily returns  
+(Source: Yahoo Finance via `yfinance`)
+
+### External Market Factors
+To avoid relying only on historical prices, the project also includes:
+
+- **S&P 500 Index (`^GSPC`)** – overall market movement
+- **NASDAQ Index (`^IXIC`)** – tech-heavy market trend
+- **VIX (`^VIX`)** – market volatility / fear index
+- **US 10-Year Treasury Yield (`^TNX`)** – interest rate proxy
+
+These features help capture **broader market conditions** that affect stock prices.
+
+---
 
 ## 🛠 Tech Stack
 - Python
 - Pandas, NumPy
+- Matplotlib
 - Scikit-learn
-- TensorFlow / Keras
 - yFinance
-- Streamlit (for dashboard)
+- TensorFlow / Keras (planned)
+- Google Colab (execution environment)
+- GitHub (version control)
 
-## 🚀 Future Enhancements
-- Intraday price prediction
-- Trading strategy backtesting
-- Automated daily predictions
-- Deployment using cloud services
+---
 
-⚠️ *Disclaimer: This project is for educational and research purposes only. It is not financial advice.*
+
+
