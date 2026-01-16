@@ -4,9 +4,9 @@
 This project is a **generic, reusable stock market analysis and prediction system** built using Python and machine learning techniques.  
 Instead of being limited to a specific company, the system allows users to **input any stock ticker** and automatically:
 
-- Fetch historical stock price data
-- Incorporate external market factors
-- Perform exploratory data analysis (EDA)
+- Fetch historical stock price data ✅
+- Incorporate external market factors ✅
+- Perform exploratory data analysis (EDA) ✅
 - Prepare data for machine learning models
 - Evaluate prediction performance
 
