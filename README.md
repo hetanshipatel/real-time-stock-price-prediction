@@ -51,7 +51,7 @@ stock-market-prediction/
 │   └── processed/          # Cleaned & feature-engineered data
 │
 ├── notebooks/
-│   └── 01_data_collection_eda_feature_model.ipynb
+│   └── 01_stock_price_prediction_pipeline.ipynb
 │
 ├── src/
 │   ├── data_fetcher.py     # Fetch stock & external data
